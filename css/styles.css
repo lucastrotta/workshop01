@@ -1,0 +1,429 @@
+@import 'https://fonts.googleapis.com/css?family=Catamaran';
+@import 'https://fonts.googleapis.com/css?family=Kavivanar';
+
+/* BÁSICOS */
+
+*{
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.cleaner{
+	clear: both;
+}
+
+html, body{
+	font-family: 'Catamaran', sans-serif;
+	height: 100%;
+}
+
+/* PROPIEDAD HEIGHT 100% */
+
+#caratula{
+	height: 100%;
+	background-color: #242528;
+	overflow: hidden;
+}
+
+#perfil{
+	height: 100%;
+	overflow: hidden;
+}
+
+#habilidades{
+	height: 100%;
+	overflow: hidden;
+}
+
+#educacion{
+	height: 100%;
+	overflow: hidden;
+}
+
+#contacto{
+	height: 100%;
+	overflow: hidden;
+}
+
+/* CUADROS */
+
+.izquierda{
+	float: left;
+	width: 50%;
+	text-align: center;
+	height: 100%;
+	overflow: hidden;
+	display:table;
+}
+
+.izquierda h2{
+	font-size: 50px;
+}
+
+.izquierda nav a{
+	color: black;
+}
+
+#contenedor-izquierda{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.derecha{
+	float: right;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* HEADER */
+
+header h4{
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #4475b2;
+	background-color: #242528;
+}
+
+/* NAVEGADOR */
+
+.navegador a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #4475b2;
+	padding: 20px 1%;
+}
+
+.navegador a:hover{
+	color: #8fbc27;
+	text-decoration: underline;
+}
+
+/* CARATULA */
+
+#caratula .container{
+	display:table;
+}
+
+#caratula img{
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+#caratula h2{
+	font-family: 'Kavivanar', cursive;
+	font-size: 100px;
+	text-shadow: 0px 0px 5px #000, 2px 5px 5px black;
+	color: white;
+	text-align: center;
+}
+
+#caratula .navegador{
+	text-align: center;
+}
+
+#flecha{
+	color: grey;
+	font-size: 80px;
+	text-align: center;
+	display: none;
+}
+
+/* PERFIL */
+
+#perfil .izquierda{
+	background-color: #4475b2;
+}
+
+#perfil .derecha{
+	display:table
+}
+
+#perfil .derecha p{
+	display:table-cell;
+	vertical-align:middle;
+	padding: 0 30px;
+}
+
+/* HABILIDADES */
+
+#habilidades .derecha{
+	background-color: #4475b2;
+	text-align: center;
+	display: table;
+}
+
+#icono-html{
+	font-size: 200px;
+}
+
+#icono-css3{
+	font-size: 160px;
+}
+
+#estrella{
+	font-size: 50px;
+}
+
+#habilidades .derecha p{
+	padding: 20px 80px;
+}
+
+/* EDUCACIÓN */
+
+#educacion .izquierda{
+	background-color: #4475b2;
+}
+
+#educacion .derecha{
+	display: table;
+}
+
+#educacion .derecha ul li{
+	list-style: none;
+	padding: 50px 0;
+}
+
+/* CONTACTO */
+
+#contacto .derecha{
+	background-color: #4475b2;
+	display: table;
+}
+
+#contacto .derecha form input{
+	display: block;
+	margin: 5px auto;
+	width: 80%;
+	padding: 5px 0;
+
+}
+
+#contacto .derecha form #mensaje{
+	padding-bottom: 200px;
+}
+
+#contacto .derecha form button{
+	display: block;
+	font-family: inherit;
+	background-color: #4475b2;
+}
+
+#contacto .derecha button:hover{
+	color: #8fbc27;
+	text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer{
+	background-color: #242528;
+}
+
+footer a{
+	color: #4475b2;
+}
+
+footer p{
+	float: right;
+	color: #4475b2;
+}
+
+footer a:hover{
+	color: white;
+}
+
+/* PUNTOS DE QUIEBRE */
+
+@media (max-width: 800px){
+	#icono-html{
+	font-size: 140px;
+	}
+
+	#icono-css3{
+		font-size: 100px;
+	}
+
+	#estrella{
+		font-size: 25px;
+	}
+
+	#educacion .derecha ul li{
+	padding: 15px 5px;
+	font-size: 14px;
+	}
+}
+
+@media (max-width: 600px){
+
+	#perfil .derecha p{
+		font-size: 12px;
+		padding: 0;
+	}
+	.navegador{
+		display: none;
+	}
+
+	#flecha{
+		display: block;
+	}
+
+	#caratula img{
+		
+	}
+
+	#caratula h2{
+		font-size: 80px;
+	}
+
+	#icono-html{
+	font-size: 100px;
+	}
+
+	#icono-css3{
+		font-size: 60px;
+	}
+
+	#estrella{
+		font-size: 20px;
+	}
+
+	.izquierda h2{
+		font-size: 35px;
+	}
+
+	#habilidades .derecha p{
+		padding: 0;
+	}
+}
+
+@media (max-width: 450px){
+	.izquierda h2{
+		font-size: 25px;
+	}
+
+	#habilidades{
+		height: 50%;
+	}
+
+	#contacto{
+		height: 50%;
+	}
+
+	#educacion{
+		height: 50%;
+	}
+
+	#perfil{
+		height: 50%;
+	}
+
+	#caratula h2{
+		font-size: 50px;
+	}
+
+	#perfil .derecha article{
+		padding: 0;
+		margin: 0;
+	}
+
+	#perfil .derecha p{
+		font-size: 8px;
+		padding: 0;
+	}
+
+	#icono-html{
+		font-size: 60px;
+	}
+
+	#icono-css3{
+		font-size: 40px;
+	}
+
+	#estrella{
+		font-size: 15px;
+	}
+
+	#habilidades .derecha p{
+		font-size: 12px;
+	}
+
+	#educacion .derecha ul li{
+	padding: 0;
+	font-size: 10px;
+	}
+
+	#educacion .derecha ul{
+		padding: 0;
+	}
+
+	#contacto .derecha form input{
+		padding: 0;
+	}
+
+	footer a, p, i{
+		font-size: 10px;
+	}
+}
+
+@media (max-height: 660px){
+	#icono-html{
+	font-size: 90px;
+	}
+
+	#icono-css3{
+		font-size: 70px;
+	}
+
+	#estrella{
+		font-size: 15px;
+	}
+
+	#habilidades .derecha p{
+		font-size: 10px;
+	}
+}
+
+@media (max-height: 525px){
+	#perfil .derecha p{
+		font-size: 12px;
+	}
+
+	#educacion .derecha ul li{
+		font-size: 10px;
+	}
+}
+
+@media (max-height: 360px){
+	#educacion .derecha ul li{
+		font-size: 10px;
+	}
+
+	footer a, p, i{
+		font-size: 10px;
+	}
+
+	#contacto .derecha form #mensaje {
+		padding-bottom: 80px;
+	}
+
+	#icono-html{
+		font-size: 60px;
+	}
+
+	#icono-css3{
+		font-size: 50px;
+	}
+}
